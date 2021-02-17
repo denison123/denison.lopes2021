@@ -26,3 +26,5 @@ app.get("/ola/:nome/:sobreNome/:cor",function(req,res){
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/html/index.html")
 })
+
+// sequelize
