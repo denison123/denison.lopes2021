@@ -19,9 +19,9 @@ app.listen(3030,function(){
 app.get("/ola/:nome/:sobreNome/:cor",function(req,res){
     res.send("<h1> Ola "+req.params.nome+"</h1>"+
              "<h2> Seu sobre nome e :"+req.params.sobreNome+"</h2>"+
-             "<h3> Sua cor e :"+req.params.cor+"</h3>")
+             "<h3> Sua cor é :"+req.params.cor+"</h3>")
 })
-
+     
 // renderizar HTML (rotas em html) obs: o arquivo html tem que esta na msm pasta onde fica as rotas ?
 app.get("/",function(req,res){
     res.sendFile(__dirname+"/html/index.html")
